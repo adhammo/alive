@@ -2426,7 +2426,7 @@ Animator:
   m_GameObject: {fileID: 7677079682364411721}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: c3b91e046d79e614fae8e20f26069545, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f2e4827a898a92344a3ee954065387d2, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2499,7 +2499,7 @@ MonoBehaviour:
   RotationSpeed: 1
   Anim: {fileID: 3972609400907927433}
   CanJump: 1
-  _grounded: 0
+  _grounded: 1
 --- !u!1 &7823495801927640257
 GameObject:
   m_ObjectHideFlags: 0
