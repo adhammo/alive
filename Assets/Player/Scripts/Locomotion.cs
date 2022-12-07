@@ -32,6 +32,8 @@ public class Locomotion : MonoBehaviour
     [Header("Grounded")]
     [Tooltip("Useful for rough ground")]
     public float GroundedOffset = -0.14f;
+    [Tooltip("When falling ground offset factor")]
+    public float GroundedOffsetFall = 0.1f;
     [Tooltip("The radius of the grounded check. Should match the radius of the CharacterController")]
     public float GroundedRadius = 0.5f;
     [Tooltip("What layers the character uses as ground")]
@@ -50,6 +52,16 @@ public class Locomotion : MonoBehaviour
     [Header("Animations")]
     [Tooltip("Player animator controller")]
     public Animator Anim;
+
+    [Header("Sounds")]
+    [Tooltip("Jumping audio clip")]
+    public AudioClip JumpingAudioClip;
+    [Tooltip("Landing audio clip")]
+    public AudioClip LandingAudioClip;
+    [Tooltip("Footsteps audio clips")]
+    public AudioClip[] FootstepAudioClips;
+    [Tooltip("Audio effects volume")]
+    [Range(0, 1)] public float AudioVolume = 0.5f;
 
     [HideInInspector()]
     public bool CanJump = true;
@@ -78,6 +90,7 @@ public class Locomotion : MonoBehaviour
     [SerializeField]
     private bool _grounded;
     private bool _jumped;
+    private bool _fallMove;
 
     // timeout deltatime
     private float _jumpTimeoutDelta;
@@ -89,6 +102,7 @@ public class Locomotion : MonoBehaviour
     private int _fallAnimHash = Animator.StringToHash("Fall");
     private int _jumpAnimHash = Animator.StringToHash("Jump");
     private int _groundAnimHash = Animator.StringToHash("Ground");
+    private int _fallMoveAnimHash = Animator.StringToHash("FallMove");
 
     private GameObject _mainCamera;
     private PlayerInput _playerInput;
@@ -114,6 +128,7 @@ public class Locomotion : MonoBehaviour
 
         _grounded = false;
         _jumped = false;
+        _fallMove = false;
 
         // reset our timeouts on start
         _jumpTimeoutDelta = JumpTimeout;
@@ -162,10 +177,15 @@ public class Locomotion : MonoBehaviour
     {
         // set sphere position, with offset
         Vector3 spherePosition = transform.position + Vector3.down * GroundedOffset;
-        _grounded = Physics.CheckSphere(spherePosition, GroundedRadius, GroundLayers, QueryTriggerInteraction.Ignore);
+        Vector3 fallSpherePosition = transform.position + Vector3.down * GroundedOffsetFall;
+        bool grounded = Physics.CheckSphere(spherePosition, GroundedRadius, GroundLayers, QueryTriggerInteraction.Ignore);
+        bool fallGrounded = Physics.CheckSphere(fallSpherePosition, GroundedRadius, GroundLayers, QueryTriggerInteraction.Ignore);
+        if (!grounded && _grounded) _fallMove = (_speed > 0.0f) && _sprint;
+        _grounded = grounded;
 
         // set animator ground
-        Anim.SetBool(_groundAnimHash, _grounded);
+        Anim.SetBool(_groundAnimHash, fallGrounded || grounded);
+        Anim.SetFloat(_fallMoveAnimHash, _fallMove ? 1f : 0f);
     }
 
     private void JumpAndGravity()
@@ -314,5 +334,27 @@ public class Locomotion : MonoBehaviour
         // when selected, draw a gizmo in the position of, and matching radius of, the grounded collider
         Vector3 spherePosition = transform.position + Vector3.down * GroundedOffset;
         Gizmos.DrawSphere(spherePosition, GroundedRadius);
+    }
+
+    private void OnFootstepClip(AnimationEvent animationEvent)
+    {
+        if (animationEvent.animatorClipInfo.weight > 0.5f)
+        {
+            if (FootstepAudioClips.Length > 0)
+            {
+                var index = Random.Range(0, FootstepAudioClips.Length);
+                AudioSource.PlayClipAtPoint(FootstepAudioClips[index], transform.TransformPoint(_controller.center), AudioVolume);
+            }
+        }
+    }
+
+    private void OnJumpClip(AnimationEvent animationEvent)
+    {
+        AudioSource.PlayClipAtPoint(JumpingAudioClip, transform.TransformPoint(_controller.center), AudioVolume);
+    }
+
+    private void OnLandClip(AnimationEvent animationEvent)
+    {
+        AudioSource.PlayClipAtPoint(LandingAudioClip, transform.TransformPoint(_controller.center), AudioVolume);
     }
 }
