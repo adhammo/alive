@@ -49,10 +49,6 @@ public class Locomotion : MonoBehaviour
     [Tooltip("Rotation speed of the camera")]
     public float RotationSpeed = 1.0f;
 
-    [Header("Animations")]
-    [Tooltip("Player animator controller")]
-    public Animator Anim;
-
     [Header("Sounds")]
     [Tooltip("Jumping audio clip")]
     public AudioClip JumpingAudioClip;
@@ -107,6 +103,7 @@ public class Locomotion : MonoBehaviour
     private GameObject _mainCamera;
     private PlayerInput _playerInput;
     private CharacterController _controller;
+    private Animator _anim;
 
     private const float _threshold = 0.01f;
 
@@ -125,6 +122,7 @@ public class Locomotion : MonoBehaviour
 
         _controller = GetComponent<CharacterController>();
         _playerInput = GetComponent<PlayerInput>();
+        _anim = GetComponent<Animator>();
 
         _grounded = false;
         _jumped = false;
@@ -184,8 +182,8 @@ public class Locomotion : MonoBehaviour
         _grounded = grounded;
 
         // set animator ground
-        Anim.SetBool(_groundAnimHash, fallGrounded || grounded);
-        Anim.SetFloat(_fallMoveAnimHash, _fallMove ? 1f : 0f);
+        _anim.SetBool(_groundAnimHash, fallGrounded || grounded);
+        _anim.SetFloat(_fallMoveAnimHash, _fallMove ? 1f : 0f);
     }
 
     private void JumpAndGravity()
@@ -218,7 +216,7 @@ public class Locomotion : MonoBehaviour
                 _verticalVelocity = Mathf.Sqrt(JumpHeight * -2f * Gravity);
 
                 // set animator jump
-                Anim.SetTrigger(_jumpAnimHash);
+                _anim.SetTrigger(_jumpAnimHash);
             }
         }
         else
@@ -235,7 +233,7 @@ public class Locomotion : MonoBehaviour
         }
 
         // set animator fall
-        Anim.SetBool(_fallAnimHash, _fallTimeoutDelta <= 0);
+        _anim.SetBool(_fallAnimHash, _fallTimeoutDelta <= 0);
     }
 
     private void Movement()
@@ -292,8 +290,8 @@ public class Locomotion : MonoBehaviour
         _controller.Move(velocity * Time.deltaTime);
 
         // set animator move and run
-        Anim.SetBool(_moveAnimHash, _speed > 0.0f);
-        Anim.SetBool(_runAnimHash, _sprint);
+        _anim.SetBool(_moveAnimHash, _speed > 0.0f);
+        _anim.SetBool(_runAnimHash, _sprint);
     }
 
     private static float ClampAngle(float lfAngle, float lfMin, float lfMax)
