@@ -19,7 +19,11 @@ public class NPC : MonoBehaviour
         Telling_A_Secret,
         Walk_In_Circle,
         Yelling,
-        Sword_Shield_Idle
+        Sword_Shield_Idle,
+        Walking1,
+        Walking2,
+        Walking_Female,
+        Walking_Bitch,
     }
 
     [Header("Animations")]
