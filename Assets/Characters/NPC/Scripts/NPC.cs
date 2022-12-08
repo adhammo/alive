@@ -18,7 +18,8 @@ public class NPC : MonoBehaviour
         Talking,
         Telling_A_Secret,
         Walk_In_Circle,
-        Yelling
+        Yelling,
+        Sword_Shield_Idle
     }
 
     [Header("Animations")]
