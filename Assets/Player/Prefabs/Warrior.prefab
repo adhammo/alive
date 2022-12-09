@@ -2358,6 +2358,7 @@ GameObject:
   - component: {fileID: 1490274142682396133}
   - component: {fileID: 2115859827344200744}
   - component: {fileID: 5606118230961137769}
+  - component: {fileID: 291968064276412955}
   m_Layer: 6
   m_Name: Warrior
   m_TagString: Player
@@ -2529,7 +2530,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   AttackDamage: 40
-  BlockReduction: 80
+  BlockReduction: 0.2
   SwordGameObject: {fileID: 5615456771171269157}
   ShieldGameObject: {fileID: 4575975775482792903}
   VoiceSource: {fileID: 1373341278417480081}
@@ -2540,6 +2541,29 @@ MonoBehaviour:
   HitAudioClips: []
   ImpactAudioClips: []
   AudioVolume: 0.5
+--- !u!114 &291968064276412955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7677079682364411721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef8c834dbfd5ead44b96d021b227f28a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxHealth: 100
+  DisabledScripts:
+  - {fileID: 2115859827344200744}
+  - {fileID: 5606118230961137769}
+  VoiceSource: {fileID: 1373341278417480081}
+  ImpactAudioClip: {fileID: 0}
+  HurtAudioClip: {fileID: 0}
+  DeathAudioClip: {fileID: 0}
+  AudioVolume: 0.5
+  _currentHealth: 0
+  CanHurt: 0
 --- !u!1 &8232740740739725675
 GameObject:
   m_ObjectHideFlags: 0

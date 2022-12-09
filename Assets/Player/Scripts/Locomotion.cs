@@ -3,6 +3,7 @@ using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(CharacterController))]
 [RequireComponent(typeof(PlayerInput))]
+[RequireComponent(typeof(Animator))]
 public class Locomotion : MonoBehaviour
 {
     [Header("Player")]
@@ -63,7 +64,9 @@ public class Locomotion : MonoBehaviour
 
     [HideInInspector()]
     public bool CanJump = true;
+    [HideInInspector()]
     public bool CanLocomote = true;
+    
     public bool IsGrounded { get { return _grounded && !_jumped; } }
 
     // input
@@ -291,7 +294,7 @@ public class Locomotion : MonoBehaviour
         _controller.Move(velocity * Time.deltaTime);
 
         // set animator move and run
-        _anim.SetBool(_moveAnimHash, _speed > 0.0f);
+        _anim.SetBool(_moveAnimHash, _move != Vector2.zero);
         _anim.SetBool(_runAnimHash, _sprint);
     }
 

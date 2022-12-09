@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-[RequireComponent(typeof(PlayerInput))]
+[RequireComponent(typeof(Animator))]
 [RequireComponent(typeof(Locomotion))]
 public class Fighter : MonoBehaviour
 {
@@ -33,7 +33,7 @@ public class Fighter : MonoBehaviour
     [Tooltip("Attack damage")]
     public float AttackDamage = 40.0f;
     [Tooltip("Block reduction")]
-    public float BlockReduction = 80.0f;
+    public float BlockReduction = 0.2f;
 
     [Header("Weapons")]
     [Tooltip("Sword")]
@@ -75,8 +75,8 @@ public class Fighter : MonoBehaviour
     private int _blockAnimHash = Animator.StringToHash("Block");
 
     private GameObject _mainCamera;
-    private Locomotion _locomotion;
     private Animator _anim;
+    private Locomotion _locomotion;
 
     public void OnAttack(InputValue value)
     {
@@ -97,8 +97,8 @@ public class Fighter : MonoBehaviour
 
     private void Start()
     {
-        _locomotion = GetComponent<Locomotion>();
         _anim = GetComponent<Animator>();
+        _locomotion = GetComponent<Locomotion>();
 
         // reset attack register
         _attacked = false;
@@ -203,6 +203,11 @@ public class Fighter : MonoBehaviour
 
         // set animator blocking
         _anim.SetBool(_blockAnimHash, _blocking);
+    }
+
+    public bool IsBlocked(Vector3 direction)
+    {
+        return true;
     }
 
     private void OnAttackCallback(AnimationEvent animationEvent)
