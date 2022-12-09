@@ -24,6 +24,9 @@ public class NPC : MonoBehaviour
         Walking2,
         Walking_Female,
         Walking_Bitch,
+        BreakDance,
+        Sitting_Clap,
+        Standing_Clap,
     }
 
     [Header("Animations")]
