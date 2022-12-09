@@ -50,6 +50,8 @@ public class Locomotion : MonoBehaviour
     public float RotationSpeed = 1.0f;
 
     [Header("Sounds")]
+    [Tooltip("Voice audio source")]
+    public AudioSource VoiceSource;
     [Tooltip("Jumping audio clip")]
     public AudioClip JumpingAudioClip;
     [Tooltip("Landing audio clip")]
@@ -61,6 +63,7 @@ public class Locomotion : MonoBehaviour
 
     [HideInInspector()]
     public bool CanJump = true;
+    public bool CanLocomote = true;
     public bool IsGrounded { get { return _grounded && !_jumped; } }
 
     // input
@@ -106,8 +109,6 @@ public class Locomotion : MonoBehaviour
     private Animator _anim;
 
     private const float _threshold = 0.01f;
-
-    private bool _hasAnimator;
 
     private void Awake()
     {
@@ -245,7 +246,7 @@ public class Locomotion : MonoBehaviour
 
         // note: Vector2's == operator uses approximation so is not floating point error prone, and is cheaper than magnitude
         // if there is no input, set the target speed to 0
-        if (_move == Vector2.zero) targetSpeed = 0.0f;
+        if (!CanLocomote || _move == Vector2.zero) targetSpeed = 0.0f;
 
         // a reference to the players current horizontal velocity
         float currentHorizontalSpeed = new Vector3(_controller.velocity.x, 0.0f, _controller.velocity.z).magnitude;
@@ -273,7 +274,7 @@ public class Locomotion : MonoBehaviour
 
         // note: Vector2's != operator uses approximation so is not floating point error prone, and is cheaper than magnitude
         // if there is a move input rotate player when the player is moving
-        if (_move != Vector2.zero)
+        if (CanLocomote && _move != Vector2.zero)
         {
             _targetRotation = Mathf.Atan2(input.x, input.z) * Mathf.Rad2Deg + _mainCamera.transform.eulerAngles.y;
             float rotation = Mathf.SmoothDampAngle(transform.eulerAngles.y, _targetRotation, ref _rotationVelocity,
@@ -341,18 +342,18 @@ public class Locomotion : MonoBehaviour
             if (FootstepAudioClips.Length > 0)
             {
                 var index = Random.Range(0, FootstepAudioClips.Length);
-                AudioSource.PlayClipAtPoint(FootstepAudioClips[index], transform.TransformPoint(_controller.center), AudioVolume);
+                AudioSource.PlayClipAtPoint(FootstepAudioClips[index], transform.position, AudioVolume);
             }
         }
     }
 
     private void OnJumpClip(AnimationEvent animationEvent)
     {
-        AudioSource.PlayClipAtPoint(JumpingAudioClip, transform.TransformPoint(_controller.center), AudioVolume);
+        VoiceSource.PlayOneShot(JumpingAudioClip);
     }
 
     private void OnLandClip(AnimationEvent animationEvent)
     {
-        AudioSource.PlayClipAtPoint(LandingAudioClip, transform.TransformPoint(_controller.center), AudioVolume);
+        AudioSource.PlayClipAtPoint(LandingAudioClip, transform.position, AudioVolume);
     }
 }

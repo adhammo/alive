@@ -84,12 +84,17 @@ ModelImporter:
   - first:
       95: 9500000
     second: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: angelStatue
+    second: {fileID: 2100000, guid: 797eb3f402cf137459a2d8e87d1d5b5f, type: 2}
   materials:
-    materialImportMode: 0
+    materialImportMode: 2
     materialName: 1
     materialSearch: 0
-    materialLocation: 0
+    materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0

@@ -51,8 +51,8 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Throw",
-                    "type": "Button",
+                    "name": "Block",
+                    "type": "PassThrough",
                     "id": "d0be092d-6c5f-4d4f-8157-690bea86425a",
                     "expectedControlType": "Button",
                     "processors": "",
@@ -284,7 +284,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "KeyboardMouse",
-                    "action": "Throw",
+                    "action": "Block",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -295,7 +295,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
-                    "action": "Throw",
+                    "action": "Block",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
