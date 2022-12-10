@@ -206,7 +206,6 @@ public class Fighter : MonoBehaviour
 
     private void OnAttackCallback(AnimationEvent animationEvent)
     {
-        Debug.Log("dasdasd damage");
         Collider[] hits = Physics.OverlapBox(transform.position + Vector3.up * (AttackHeight / 2f) + transform.forward * (AttackDistance / 2f - 0.5f), new Vector3(AttackWidth / 2f, AttackHeight / 2f, (AttackDistance / 2f) + 0.5f), Quaternion.LookRotation(transform.forward), AttackLayer);
 
         Collider minHit = null;
