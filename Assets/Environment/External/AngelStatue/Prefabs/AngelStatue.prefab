@@ -11,12 +11,12 @@ GameObject:
   - component: {fileID: 6611780098116062598}
   - component: {fileID: 1837445669295721926}
   - component: {fileID: 357452978888475914}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &6611780098116062598
 Transform:
@@ -97,7 +97,7 @@ GameObject:
   m_Name: AngelStatue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1557510195045878125
@@ -146,7 +146,7 @@ GameObject:
   m_Name: Statue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &4421758441103437418

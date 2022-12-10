@@ -57,7 +57,7 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: 0.27386817
+      - time: 0.41132522
         functionName: OnAttackClip
         data: 
         objectReferenceParameter: {fileID: 11500000, guid: 40e5816c92b03ca4da4e5502d30e7179,

@@ -20,10 +20,10 @@ public class Death : MonoBehaviour
     [Header("Sounds")]
     [Tooltip("Voice audio source")]
     public AudioSource VoiceSource;
-    [Tooltip("Hurt audio clip")]
-    public AudioClip ImpactAudioClip;
-    [Tooltip("Hurt audio clip")]
-    public AudioClip HurtAudioClip;
+    [Tooltip("Hurt audio clips")]
+    public AudioClip[] HurtAudioClips;
+    [Tooltip("Impact audio clips")]
+    public AudioClip[] ImpactAudioClips;
     [Tooltip("Death audio clip")]
     public AudioClip DeathAudioClip;
     [Tooltip("Audio effects volume")]
@@ -105,7 +105,6 @@ public class Death : MonoBehaviour
     {
         if (CanHurt)
         {
-            VoiceSource.PlayOneShot(HurtAudioClip);
             _anim.SetTrigger(_hurtAnimHash);
             // HurtUI.GetHurt();
         }
@@ -115,7 +114,6 @@ public class Death : MonoBehaviour
     {
         if (CanHurt)
         {
-            VoiceSource.PlayOneShot(ImpactAudioClip);
             _anim.SetTrigger(_impactAnimHash);
             // HurtUI.GetHurt();
         }
@@ -129,5 +127,23 @@ public class Death : MonoBehaviour
             script.enabled = false;
 
         _controller.enabled = false;
+    }
+
+    private void OnHurtClip(AnimationEvent animationEvent)
+    {
+        if (HurtAudioClips.Length > 0)
+        {
+            var index = Random.Range(0, HurtAudioClips.Length);
+            VoiceSource.PlayOneShot(HurtAudioClips[index], AudioVolume);
+        }
+    }
+
+    private void OnImpactClip(AnimationEvent animationEvent)
+    {
+        if (ImpactAudioClips.Length > 0)
+        {
+            var index = Random.Range(0, ImpactAudioClips.Length);
+            AudioSource.PlayClipAtPoint(ImpactAudioClips[index], _fighter.ShieldGameObject.transform.position, AudioVolume);
+        }
     }
 }

@@ -13,7 +13,7 @@ GameObject:
   m_Name: mixamorig:RightHandMiddle3_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1255258429665639187
@@ -44,7 +44,7 @@ GameObject:
   m_Name: mixamorig:LeftLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1382902979509714408
@@ -76,7 +76,7 @@ GameObject:
   m_Name: mixamorig:LeftFoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &4732909127669166041
@@ -108,7 +108,7 @@ GameObject:
   m_Name: mixamorig:LeftHandRing2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &7223248569320668347
@@ -141,7 +141,7 @@ GameObject:
   m_Name: Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &752152118501348898
@@ -280,7 +280,7 @@ GameObject:
   m_Name: mixamorig:RightHandMiddle3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &4877956977565576065
@@ -312,7 +312,7 @@ GameObject:
   m_Name: mixamorig:LeftHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &7321979847683748984
@@ -349,7 +349,7 @@ GameObject:
   m_Name: mixamorig:LeftHandMiddle1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &4029060364385622447
@@ -381,7 +381,7 @@ GameObject:
   m_Name: mixamorig:Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &6693280017288565770
@@ -414,7 +414,7 @@ GameObject:
   m_Name: mixamorig:LeftHandPinky3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &7208581041609527323
@@ -446,7 +446,7 @@ GameObject:
   m_Name: mixamorig:LeftHandMiddle3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &745320598284532231
@@ -478,7 +478,7 @@ GameObject:
   m_Name: mixamorig:LeftHandIndex3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1837852498579983311
@@ -510,7 +510,7 @@ GameObject:
   m_Name: mixamorig:RightToeBase_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &9162142852125406390
@@ -541,7 +541,7 @@ GameObject:
   m_Name: mixamorig:LeftHandIndex3_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &8191716428977724666
@@ -572,7 +572,7 @@ GameObject:
   m_Name: mixamorig:LeftHandThumb2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &865497111110378589
@@ -604,7 +604,7 @@ GameObject:
   m_Name: mixamorig:RightHandIndex3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &4481744148144549627
@@ -636,7 +636,7 @@ GameObject:
   m_Name: mixamorig:LeftHandMiddle2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &788948700800566518
@@ -668,7 +668,7 @@ GameObject:
   m_Name: mixamorig:RightHandMiddle1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &8491617565370855004
@@ -700,7 +700,7 @@ GameObject:
   m_Name: mixamorig:LeftHandIndex1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &7851993103032265577
@@ -732,7 +732,7 @@ GameObject:
   m_Name: mixamorig:LeftHandRing3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &5069336255720511272
@@ -764,7 +764,7 @@ GameObject:
   m_Name: mixamorig:LeftHandMiddle3_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &9098955477873452992
@@ -795,7 +795,7 @@ GameObject:
   m_Name: mixamorig:RightHandRing1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &6595131390063341349
@@ -827,7 +827,7 @@ GameObject:
   m_Name: mixamorig:RightHandPinky2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &3815887373003807534
@@ -859,7 +859,7 @@ GameObject:
   m_Name: mixamorig:LeftUpLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &7271892499207779004
@@ -891,7 +891,7 @@ GameObject:
   m_Name: mixamorig:RightLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &7950617642615449472
@@ -923,7 +923,7 @@ GameObject:
   m_Name: mixamorig:RightHandPinky1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &3802631627469763547
@@ -955,7 +955,7 @@ GameObject:
   m_Name: mixamorig:RightHandIndex2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &5596800173991171345
@@ -987,7 +987,7 @@ GameObject:
   m_Name: mixamorig:RightHandThumb2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &7768841150773183128
@@ -1019,7 +1019,7 @@ GameObject:
   m_Name: mixamorig:RightForeArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2272154702182999380
@@ -1051,7 +1051,7 @@ GameObject:
   m_Name: mixamorig:RightHandRing3_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &8733072026578281678
@@ -1082,7 +1082,7 @@ GameObject:
   m_Name: mixamorig:Spine1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &6071857367693828869
@@ -1114,7 +1114,7 @@ GameObject:
   m_Name: mixamorig:LeftHandThumb3_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &5902574866105054734
@@ -1147,7 +1147,7 @@ GameObject:
   m_Name: Shield
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &6102317604577183862
@@ -1228,7 +1228,7 @@ GameObject:
   m_Name: Target
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &7552843022339043573
@@ -1259,7 +1259,7 @@ GameObject:
   m_Name: mixamorig:Hips
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &694397460319370774
@@ -1293,7 +1293,7 @@ GameObject:
   m_Name: mixamorig:LeftHandThumb1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &6205740395175904072
@@ -1325,7 +1325,7 @@ GameObject:
   m_Name: mixamorig:RightShoulder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &7692941088239711062
@@ -1357,7 +1357,7 @@ GameObject:
   m_Name: mixamorig:LeftHandPinky2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2550083282497931332
@@ -1389,7 +1389,7 @@ GameObject:
   m_Name: mixamorig:LeftArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2918215701219111986
@@ -1421,7 +1421,7 @@ GameObject:
   m_Name: mixamorig:RightHandThumb3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1991856796971366034
@@ -1453,7 +1453,7 @@ GameObject:
   m_Name: mixamorig:LeftShoulder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &849434256162574873
@@ -1485,7 +1485,7 @@ GameObject:
   m_Name: mixamorig:RightHandThumb3_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &461818504473598932
@@ -1516,7 +1516,7 @@ GameObject:
   m_Name: mixamorig:RightFoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &359227456604278439
@@ -1548,7 +1548,7 @@ GameObject:
   m_Name: mixamorig:LeftHandPinky3_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &4742351682306730904
@@ -1581,7 +1581,7 @@ GameObject:
   m_Name: MoonSword
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &3533245017345420396
@@ -1662,7 +1662,7 @@ GameObject:
   m_Name: mixamorig:LeftHandIndex2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &4432573079308222430
@@ -1694,7 +1694,7 @@ GameObject:
   m_Name: mixamorig:RightHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1842564404605902313
@@ -1731,7 +1731,7 @@ GameObject:
   m_Name: mixamorig:RightHandIndex3_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &5071651407661530102
@@ -1762,7 +1762,7 @@ GameObject:
   m_Name: mixamorig:Spine2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1759727568251703560
@@ -1798,7 +1798,7 @@ GameObject:
   m_Name: Helmet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &3810061420241770880
@@ -1879,7 +1879,7 @@ GameObject:
   m_Name: Armature
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &4886899570283194036
@@ -1911,7 +1911,7 @@ GameObject:
   m_Name: mixamorig:LeftHandThumb3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &4946415542153941816
@@ -1943,7 +1943,7 @@ GameObject:
   m_Name: mixamorig:RightHandRing2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &4678457495406326615
@@ -1975,7 +1975,7 @@ GameObject:
   m_Name: mixamorig:RightHandMiddle2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &4948848851886747982
@@ -2007,7 +2007,7 @@ GameObject:
   m_Name: mixamorig:RightHandPinky3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1484970012794068046
@@ -2039,7 +2039,7 @@ GameObject:
   m_Name: mixamorig:LeftToeBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &7793317295389020925
@@ -2071,7 +2071,7 @@ GameObject:
   m_Name: mixamorig:RightHandIndex1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &7101978833259913885
@@ -2103,7 +2103,7 @@ GameObject:
   m_Name: mixamorig:Neck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &5058414763325846728
@@ -2135,7 +2135,7 @@ GameObject:
   m_Name: mixamorig:RightUpLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &627548913909774701
@@ -2167,7 +2167,7 @@ GameObject:
   m_Name: mixamorig:RightHandRing3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &9023783952713718602
@@ -2199,7 +2199,7 @@ GameObject:
   m_Name: mixamorig:LeftForeArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &4348678584951691936
@@ -2231,7 +2231,7 @@ GameObject:
   m_Name: mixamorig:LeftHandRing1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &7069437107837109810
@@ -2263,7 +2263,7 @@ GameObject:
   m_Name: mixamorig:RightHandPinky3_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &5184859250046468818
@@ -2294,7 +2294,7 @@ GameObject:
   m_Name: mixamorig:Spine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2949476156633151374
@@ -2326,7 +2326,7 @@ GameObject:
   m_Name: mixamorig:LeftHandRing3_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1875842975552849756
@@ -2363,7 +2363,7 @@ GameObject:
   m_Name: Warrior
   m_TagString: Player
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &7044095903988405747
@@ -2521,25 +2521,24 @@ MonoBehaviour:
   AttackHeight: 3
   AttackLayer:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 192
   BlockRotationSmoothTime: 0.12
   BlockRotationAngleStep: 30
   BlockWidth: 1
   BlockHeight: 2
   BlockLayer:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 192
   AttackDamage: 40
   BlockReduction: 0.2
   SwordGameObject: {fileID: 5615456771171269157}
   ShieldGameObject: {fileID: 4575975775482792903}
-  VoiceSource: {fileID: 1373341278417480081}
   AttackAudioClips:
+  - {fileID: 8300000, guid: abcb87fb149f8eb4ba688fb3a8a786b2, type: 3}
   - {fileID: 8300000, guid: 771c0cac5a7a73e49bbd053586a04477, type: 3}
   AttackHitAudioClips:
-  - {fileID: 8300000, guid: a49edfae2c927144b9397c11279525f7, type: 3}
-  HitAudioClips: []
-  ImpactAudioClips: []
+  - {fileID: 8300000, guid: 3f4bff5b8db5d7141977c742f9e53a2c, type: 3}
+  - {fileID: 8300000, guid: 982915a6ab77dc34e8e9785efff8326a, type: 3}
   AudioVolume: 0.5
 --- !u!114 &291968064276412955
 MonoBehaviour:
@@ -2558,9 +2557,14 @@ MonoBehaviour:
   - {fileID: 2115859827344200744}
   - {fileID: 5606118230961137769}
   VoiceSource: {fileID: 1373341278417480081}
-  ImpactAudioClip: {fileID: 0}
-  HurtAudioClip: {fileID: 0}
-  DeathAudioClip: {fileID: 0}
+  HurtAudioClips:
+  - {fileID: 8300000, guid: 34af98c0e86cf6e4298395c476f319b8, type: 3}
+  - {fileID: 8300000, guid: c0101ceada8f759449571cc18e116da0, type: 3}
+  - {fileID: 8300000, guid: 10699b295e1dbe14badd750562029bb9, type: 3}
+  ImpactAudioClips:
+  - {fileID: 8300000, guid: 71829928f1a4f704abd3c3aedc2d797e, type: 3}
+  - {fileID: 8300000, guid: f8c1bcfb9fd770345b10cd54fac62484, type: 3}
+  DeathAudioClip: {fileID: 8300000, guid: 77a3442da326172459c33f469d891264, type: 3}
   AudioVolume: 0.5
   _currentHealth: 0
   CanHurt: 0
@@ -2577,7 +2581,7 @@ GameObject:
   m_Name: mixamorig:LeftHandPinky1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &8698348781655338852
@@ -2609,7 +2613,7 @@ GameObject:
   m_Name: mixamorig:RightHandThumb1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &6120460232145514244
@@ -2641,7 +2645,7 @@ GameObject:
   m_Name: mixamorig:RightArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &539351772270184406
@@ -2673,7 +2677,7 @@ GameObject:
   m_Name: mixamorig:Head_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &4989383045376164095
@@ -2704,7 +2708,7 @@ GameObject:
   m_Name: mixamorig:LeftToeBase_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &8687559985764578327
@@ -2735,7 +2739,7 @@ GameObject:
   m_Name: mixamorig:RightToeBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &646041390931870648
@@ -2768,7 +2772,7 @@ GameObject:
   m_Name: Voice
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &8155026396521276660
