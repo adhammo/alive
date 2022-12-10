@@ -49,6 +49,9 @@ public class Fighter : MonoBehaviour
     [Tooltip("Audio effects volume")]
     [Range(0, 1)] public float AudioVolume = 0.5f;
 
+    [HideInInspector]
+    public bool CanAttack = true;
+
     // player
     private float _rotationVelocity;
     private float _targetRotation = 0.0f;
@@ -124,7 +127,7 @@ public class Fighter : MonoBehaviour
 
     private void Attack()
     {
-        if (_attack)
+        if (CanAttack && _attack)
         {
             // reset attack
             _attack = false;

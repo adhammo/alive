@@ -36,18 +36,20 @@ public class NPC : MonoBehaviour
     private bool _active = true;
 
     private Animator _anim;
+    private CapsuleCollider _collider;
     private Transform _player;
 
-    void Start()
+    private void Start()
     {
         _anim = GetComponent<Animator>();
+        _collider = GetComponent<CapsuleCollider>();
 
         _player = GameObject.FindGameObjectWithTag("Player").transform;
 
         _anim.SetFloat("Interaction", (int)Interaction);
     }
 
-    void Update()
+    private void LateUpdate()
     {
         Vector3 dist = _player.position - transform.position;
         bool active = (dist.x * dist.x + dist.z * dist.z) < 100f * 100f;
@@ -55,6 +57,7 @@ public class NPC : MonoBehaviour
         {
             _active = active;
             _anim.enabled = _active;
+            _collider.enabled = _active;
             foreach (Transform child in transform)
                 child.gameObject.SetActive(_active);
         }
