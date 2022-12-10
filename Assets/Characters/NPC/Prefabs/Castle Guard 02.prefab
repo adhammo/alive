@@ -791,6 +791,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Interaction: 0
+  DisabledChildren:
+  - {fileID: 8721833979355554152}
+  - {fileID: 5275157686114986279}
 --- !u!1 &6019466094387010454
 GameObject:
   m_ObjectHideFlags: 0

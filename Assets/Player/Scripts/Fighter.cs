@@ -42,16 +42,10 @@ public class Fighter : MonoBehaviour
     public GameObject ShieldGameObject;
 
     [Header("Sounds")]
-    [Tooltip("Voice audio source")]
-    public AudioSource VoiceSource;
     [Tooltip("Attack audio clips")]
     public AudioClip[] AttackAudioClips;
     [Tooltip("Attack hit audio clips")]
     public AudioClip[] AttackHitAudioClips;
-    [Tooltip("Hit audio clips")]
-    public AudioClip[] HitAudioClips;
-    [Tooltip("Impact audio clips")]
-    public AudioClip[] ImpactAudioClips;
     [Tooltip("Audio effects volume")]
     [Range(0, 1)] public float AudioVolume = 0.5f;
 
@@ -207,11 +201,12 @@ public class Fighter : MonoBehaviour
 
     public bool IsBlocked(Vector3 direction)
     {
-        return true;
+        return _blocking;
     }
 
     private void OnAttackCallback(AnimationEvent animationEvent)
     {
+        Debug.Log("dasdasd damage");
         Collider[] hits = Physics.OverlapBox(transform.position + Vector3.up * (AttackHeight / 2f) + transform.forward * (AttackDistance / 2f - 0.5f), new Vector3(AttackWidth / 2f, AttackHeight / 2f, (AttackDistance / 2f) + 0.5f), Quaternion.LookRotation(transform.forward), AttackLayer);
 
         Collider minHit = null;
@@ -231,7 +226,11 @@ public class Fighter : MonoBehaviour
         if (minHit != null)
         {
             Debug.Log("Attack damage");
-            // _audioSource.PlayOneShot(AttackHit);
+            if (AttackHitAudioClips.Length > 0)
+            {
+                var index = Random.Range(0, AttackHitAudioClips.Length);
+                AudioSource.PlayClipAtPoint(AttackHitAudioClips[index], SwordGameObject.transform.position, AudioVolume);
+            }
             // BotStatus bot = minHit.GetComponent<BotStatus>();
             // bot.TakeDamage(AttackDamage);
         }
@@ -242,16 +241,7 @@ public class Fighter : MonoBehaviour
         if (AttackAudioClips.Length > 0)
         {
             var index = Random.Range(0, AttackAudioClips.Length);
-            VoiceSource.PlayOneShot(AttackAudioClips[index], AudioVolume);
-        }
-    }
-
-    private void OnAttackHitClip(AnimationEvent animationEvent)
-    {
-        if (AttackHitAudioClips.Length > 0)
-        {
-            var index = Random.Range(0, AttackHitAudioClips.Length);
-            VoiceSource.PlayOneShot(AttackHitAudioClips[index], AudioVolume);
+            AudioSource.PlayClipAtPoint(AttackAudioClips[index], SwordGameObject.transform.position, AudioVolume);
         }
     }
 

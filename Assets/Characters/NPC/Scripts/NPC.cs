@@ -33,16 +33,30 @@ public class NPC : MonoBehaviour
     [Tooltip("NPC interaction animation")]
     public NPCInteractions Interaction;
 
+    private bool _active = true;
+
     private Animator _anim;
+    private Transform _player;
 
     void Start()
     {
         _anim = GetComponent<Animator>();
+
+        _player = GameObject.FindGameObjectWithTag("Player").transform;
+
         _anim.SetFloat("Interaction", (int)Interaction);
     }
 
     void Update()
     {
-        _anim.SetFloat("Interaction", (int)Interaction);
+        Vector3 dist = _player.position - transform.position;
+        bool active = (dist.x * dist.x + dist.z * dist.z) < 100f * 100f;
+        if (_active != active)
+        {
+            _active = active;
+            _anim.enabled = _active;
+            foreach (Transform child in transform)
+                child.gameObject.SetActive(_active);
+        }
     }
 }
