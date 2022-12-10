@@ -1,0 +1,201 @@
+fileFormatVersion: 2
+guid: a6b71cc81ae851041ba94ffb4bdc42ff
+ModelImporter:
+  serializedVersion: 21300
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GRAVE_LOW_casket_door_part1Mat
+    second: {fileID: 2100000, guid: 55dc6f0bdc566014ba8eff40341a28d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GRAVE_LOW_casket_door_part2Mat
+    second: {fileID: 2100000, guid: df7fb592c63ced849a230f93f6eed583, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GRAVE_LOW_casket_door_part3Mat
+    second: {fileID: 2100000, guid: 65ba044fb9e5eae4db0226321052da63, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GRAVE_LOW_casket_door_part5Mat
+    second: {fileID: 2100000, guid: 698b028568fc89c4b8c2b7671507a525, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GRAVE_LOW_pPlane26Mat
+    second: {fileID: 2100000, guid: 5c2336cd803f29140b20f6b9fca1ecbf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GRAVE_LOW_pPlane27Mat
+    second: {fileID: 2100000, guid: 01208a9d7bff8c14a801eff295778080, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GRAVE_LOW_pPlane28Mat
+    second: {fileID: 2100000, guid: 99da4b8cf4f7e6c4e93483494a8525a4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GRAVE_LOW_pPlane29Mat
+    second: {fileID: 2100000, guid: f62a6b89a61d7724492eef414e33934a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GRAVE_LOW_pPlane30Mat
+    second: {fileID: 2100000, guid: 196cadb334cb9fd4f80a8a768b46ad2e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GRAVE_LOW_pPlane32Mat
+    second: {fileID: 2100000, guid: 621ebfec1bbd25f4b974a7127412b5d6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GRAVE_LOW_pPlane34Mat
+    second: {fileID: 2100000, guid: af066e80451a5da40a25950bb72da213, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GRAVE_LOW_pPlane37Mat
+    second: {fileID: 2100000, guid: a7f75d09cea9d094798566e651add919, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GRAVE_LOW_pPlane38Mat
+    second: {fileID: 2100000, guid: b8a4b09522ad3ce4b931489e552f07ce, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GRAVE_LOW_pPlane41Mat
+    second: {fileID: 2100000, guid: 9933906d7a490894e9a41f40491cddeb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GRAVE_LOW_pPlane42Mat
+    second: {fileID: 2100000, guid: f01e04fa8e64bb944b47ba424d821302, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GRAVE_LOW_pPlane44Mat
+    second: {fileID: 2100000, guid: f259445bf1e237b44b0104cd573f7177, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GRAVE_LOW_polySurface7Mat
+    second: {fileID: 2100000, guid: 2ffe03a130afea54580272cb1c114914, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: casket_door_GRAVE_LOWMat
+    second: {fileID: 2100000, guid: c2a3456fba480914fb2524fce213773c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: textureEditorIsolateSelectSet_GRAVE_LOW_pPlane33Mat
+    second: {fileID: 2100000, guid: ca2274b62c0d4514a98962ee8e4c76e8, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 1
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
