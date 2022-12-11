@@ -25,23 +25,25 @@ public class Player : MonoBehaviour
 
     public void EnablePlayer()
     {
-        _anim.SetLayerWeight(1, 1f);
         _controller.enabled = true;
         _locomotion.enabled = true;
+        _locomotion.ResetCamera();
         _fighter.enabled = true;
         _death.enabled = true;
+        _anim.SetLayerWeight(1, 1f);
     }
 
     public void DisablePlayer()
     {
-        _locomotion.resetAnimations();
-        _fighter.resetAnimations();
-        _death.resetAnimations();
-        _anim.SetLayerWeight(1, 0f);
+        _locomotion.ResetCamera();
         _controller.enabled = false;
+        _locomotion.Reset();
         _locomotion.enabled = false;
+        _fighter.Reset();
         _fighter.enabled = false;
+        _death.Reset();
         _death.enabled = false;
+        _anim.SetLayerWeight(1, 0f);
     }
 
     public void SetAttacking(bool canAttack)

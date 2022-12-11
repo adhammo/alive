@@ -75,6 +75,8 @@ public class Fighter : MonoBehaviour
     private Animator _anim;
     private Locomotion _locomotion;
 
+    private bool initialized = false;
+
     public void OnAttack(InputValue value)
     {
         _attack = value.isPressed;
@@ -97,12 +99,8 @@ public class Fighter : MonoBehaviour
         _anim = GetComponent<Animator>();
         _locomotion = GetComponent<Locomotion>();
 
-        // reset attack register
-        _attacked = false;
-
-        // reset state
-        _attacking = false;
-        _blocking = false;
+        initialized = true;
+        Reset();
     }
 
     private void Update()
@@ -207,10 +205,17 @@ public class Fighter : MonoBehaviour
         return _blocking;
     }
 
-    public void resetAnimations()
+    public void Reset()
     {
-        if (_anim)
+        if (initialized)
         {
+            _attack = false;
+            _block = false;
+            
+            _attacking = false;
+            _attacked = false;
+            _blocking = false;
+
             _anim.ResetTrigger(_attackAnimHash);
             _anim.SetBool(_blockAnimHash, false);
         }

@@ -2499,7 +2499,7 @@ MonoBehaviour:
   BottomClamp: -30
   RotationSpeed: 1
   VoiceSource: {fileID: 1373341278417480081}
-  JumpingAudioClip: {fileID: 8300000, guid: ecc9422bbc2d55d40915cdff1fece15c, type: 3}
+  JumpingAudioClip: {fileID: 8300000, guid: 115f193881fada14d807d61249cc0c9e, type: 3}
   LandingAudioClip: {fileID: 8300000, guid: ff697d3070687ce4583faa0561a145a2, type: 3}
   FootstepAudioClips:
   - {fileID: 8300000, guid: 9162f676131d592439cd77c40748beb5, type: 3}

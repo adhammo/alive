@@ -113,6 +113,8 @@ public class Locomotion : MonoBehaviour
 
     private const float _threshold = 0.01f;
 
+    private bool initialized = false;
+
     private void Awake()
     {
         // get a reference to our main camera
@@ -122,19 +124,14 @@ public class Locomotion : MonoBehaviour
 
     private void Start()
     {
-        _cinemachineTargetYaw = CinemachineCameraTarget.transform.rotation.eulerAngles.y;
+        ResetCamera();
 
         _controller = GetComponent<CharacterController>();
         _playerInput = GetComponent<PlayerInput>();
         _anim = GetComponent<Animator>();
 
-        _grounded = false;
-        _jumped = false;
-        _fallMove = false;
-
-        // reset our timeouts on start
-        _jumpTimeoutDelta = JumpTimeout;
-        _fallTimeoutDelta = FallTimeout;
+        initialized = true;
+        Reset();
     }
 
     private bool IsCurrentDeviceMouse => _playerInput.currentControlScheme == "KeyboardMouse";
@@ -325,16 +322,38 @@ public class Locomotion : MonoBehaviour
         CinemachineCameraTarget.transform.rotation = Quaternion.Euler(_cinemachineTargetPitch, _cinemachineTargetYaw, 0.0f);
     }
 
-    public void resetAnimations()
+    public void Reset()
     {
-        if (_anim)
+        if (initialized)
         {
+            _look = Vector2.zero;
+            _move = Vector2.zero;
+            _sprint = false;
+            _jump = false;
+
+            _speed = 0f;
+            _verticalVelocity = 0f;
+            _grounded = false;
+            _jumped = false;
+            _fallMove = false;
+
+            _jumpTimeoutDelta = JumpTimeout;
+            _fallTimeoutDelta = FallTimeout;
+
             _anim.SetBool(_moveAnimHash, false);
             _anim.SetBool(_runAnimHash, false);
             _anim.ResetTrigger(_jumpAnimHash);
             _anim.SetBool(_groundAnimHash, true);
             _anim.SetBool(_fallAnimHash, false);
         }
+    }
+
+    public void ResetCamera()
+    {
+        CinemachineCameraTarget.transform.localRotation = Quaternion.identity;
+
+        _cinemachineTargetPitch = 0f;
+        _cinemachineTargetYaw = CinemachineCameraTarget.transform.rotation.eulerAngles.y;
     }
 
     private void OnFootstepClip(AnimationEvent animationEvent)

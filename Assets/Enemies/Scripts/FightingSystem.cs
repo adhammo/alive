@@ -21,9 +21,14 @@ public class FightingSystem : MonoBehaviour
     private Vector3 _targetPoint = Vector3.zero;
     private Animator _anim;
 
-    void Start()
+    private void Awake()
     {
-        _player = GameObject.FindGameObjectWithTag("Player");
+        if (_player == null)
+            _player = GameObject.FindGameObjectWithTag("Player");
+    }
+
+    private void Start()
+    {
         _anim = GetComponent<Animator>();
 
         switch (FighterType)
@@ -43,7 +48,7 @@ public class FightingSystem : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         if (Vector3.Distance(transform.position, _player.transform.position) < Range)
         {

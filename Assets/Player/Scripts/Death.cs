@@ -46,12 +46,20 @@ public class Death : MonoBehaviour
     private CharacterController _controller;
     private Animator _anim;
     private Fighter _fighter;
+    private StateManager _manager;
+
+    private bool initialized = false;
 
     private void Start()
     {
         _controller = GetComponent<CharacterController>();
         _anim = GetComponent<Animator>();
         _fighter = GetComponent<Fighter>();
+
+        _manager = GameObject.FindWithTag("Manager").GetComponent<StateManager>();
+
+        initialized = true;
+        Reset();
 
         _currentHealth = MaxHealth;
     }
@@ -92,16 +100,6 @@ public class Death : MonoBehaviour
             Die();
     }
 
-    public void Reset()
-    {
-        foreach (var script in DisabledScripts)
-            script.enabled = true;
-
-        _controller.enabled = true;
-
-        _currentHealth = MaxHealth;
-    }
-
     private void Hurt()
     {
         if (CanHurt)
@@ -125,16 +123,12 @@ public class Death : MonoBehaviour
     private void Die()
     {
         VoiceSource.PlayOneShot(DeathAudioClip);
-
-        foreach (var script in DisabledScripts)
-            script.enabled = false;
-
-        _controller.enabled = false;
+        _manager.Died();
     }
 
-    public void resetAnimations()
+    public void Reset()
     {
-        if (_anim)
+        if (initialized)
         {
             _anim.ResetTrigger(_hurtAnimHash);
             _anim.ResetTrigger(_impactAnimHash);

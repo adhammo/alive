@@ -39,12 +39,16 @@ public class NPC : MonoBehaviour
     private CapsuleCollider _collider;
     private Transform _player;
 
+    private void Awake()
+    {
+        if (_player == null)
+            _player = GameObject.FindGameObjectWithTag("Player").transform;
+    }
+
     private void Start()
     {
         _anim = GetComponent<Animator>();
         _collider = GetComponent<CapsuleCollider>();
-
-        _player = GameObject.FindGameObjectWithTag("Player").transform;
 
         _anim.SetFloat("Interaction", (int)Interaction);
     }
