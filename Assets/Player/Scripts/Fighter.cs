@@ -242,8 +242,7 @@ public class Fighter : MonoBehaviour
                 var index = Random.Range(0, AttackHitAudioClips.Length);
                 AudioSource.PlayClipAtPoint(AttackHitAudioClips[index], SwordGameObject.transform.position, AudioVolume);
             }
-            // BotStatus bot = minHit.GetComponent<BotStatus>();
-            // bot.TakeDamage(AttackDamage);
+             minHit.GetComponent<FightingSystem>().TakeDmg(AttackDamage);
         }
     }
 
