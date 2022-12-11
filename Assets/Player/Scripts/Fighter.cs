@@ -207,6 +207,15 @@ public class Fighter : MonoBehaviour
         return _blocking;
     }
 
+    public void resetAnimations()
+    {
+        if (_anim)
+        {
+            _anim.ResetTrigger(_attackAnimHash);
+            _anim.SetBool(_blockAnimHash, false);
+        }
+    }
+
     private void OnAttackCallback(AnimationEvent animationEvent)
     {
         Collider[] hits = Physics.OverlapBox(transform.position + Vector3.up * (AttackHeight / 2f) + transform.forward * (AttackDistance / 2f - 0.5f), new Vector3(AttackWidth / 2f, AttackHeight / 2f, (AttackDistance / 2f) + 0.5f), Quaternion.LookRotation(transform.forward), AttackLayer);

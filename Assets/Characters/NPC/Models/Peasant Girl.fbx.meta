@@ -5,20 +5,25 @@ ModelImporter:
   internalIDToNameTable: []
   externalObjects:
   - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Peasant_Girl
+    second: {fileID: 2100000, guid: 3a993a69114d29a43be1c03aea00d3c2, type: 2}
+  - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Peasant_Girl_diffuse
-    second: {fileID: 2800000, guid: f21ec9944d527a34c98ea130588dbfe6, type: 3}
+    second: {fileID: 2800000, guid: 6371a2ad53d4cf74fbca72dab62d78ba, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Peasant_Girl_normal
-    second: {fileID: 2800000, guid: a8c1ec915cbf96745aca55d9787a7c22, type: 3}
+    second: {fileID: 2800000, guid: 3422fd4739ffe3a4e8479dbd2f3c7847, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Peasant_Girl_specular
-    second: {fileID: 2800000, guid: 7ad820fcaedec4840a6ba4a3ec773daf, type: 3}
+    second: {fileID: 2800000, guid: 96f8b4b7e3fcd3742b03b6482a4de687, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

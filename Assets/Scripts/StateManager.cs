@@ -9,8 +9,9 @@ public class StateManager : MonoBehaviour
         Wakeup,
     }
 
-    [Header("Wakeup")]
+    [Header("Cutscenes")]
     public GameObject WakeupCutscene;
+    public GameObject DeathCutscene;
 
     [SerializeField]
     private GameEvents _gameEvent;
@@ -24,6 +25,7 @@ public class StateManager : MonoBehaviour
 
         // disable all cutscenes
         WakeupCutscene.SetActive(false);
+        DeathCutscene.SetActive(false);
 
         Wakeup();
     }
@@ -31,7 +33,7 @@ public class StateManager : MonoBehaviour
     private void Wakeup()
     {
         _player.DisablePlayer();
-        // _player.SetAttacking(false);
+        _player.SetAttacking(false);
 
         WakeupCutscene.SetActive(true);
     }
@@ -39,6 +41,20 @@ public class StateManager : MonoBehaviour
     public void FinishWakeup()
     {
         WakeupCutscene.SetActive(false);
+
+        _player.EnablePlayer();
+    }
+
+    public void Death()
+    {
+        _player.DisablePlayer();
+
+        DeathCutscene.SetActive(true);
+    }
+
+    public void FinishDeath()
+    {
+        DeathCutscene.SetActive(false);
 
         _player.EnablePlayer();
     }

@@ -40,6 +40,7 @@ public class Death : MonoBehaviour
 
     // animator hashes
     private int _hurtAnimHash = Animator.StringToHash("Hurt");
+    private int _hurtValAnimHash = Animator.StringToHash("HurtVal");
     private int _impactAnimHash = Animator.StringToHash("Impact");
 
     private CharacterController _controller;
@@ -105,6 +106,8 @@ public class Death : MonoBehaviour
     {
         if (CanHurt)
         {
+            var index = Random.Range(0, HurtAudioClips.Length);
+            _anim.SetFloat(_hurtValAnimHash, index);
             _anim.SetTrigger(_hurtAnimHash);
             // HurtUI.GetHurt();
         }
@@ -127,6 +130,15 @@ public class Death : MonoBehaviour
             script.enabled = false;
 
         _controller.enabled = false;
+    }
+
+    public void resetAnimations()
+    {
+        if (_anim)
+        {
+            _anim.ResetTrigger(_hurtAnimHash);
+            _anim.ResetTrigger(_impactAnimHash);
+        }
     }
 
     private void OnHurtClip(AnimationEvent animationEvent)

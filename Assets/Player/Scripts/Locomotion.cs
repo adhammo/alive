@@ -66,7 +66,7 @@ public class Locomotion : MonoBehaviour
     public bool CanJump = true;
     [HideInInspector()]
     public bool CanLocomote = true;
-    
+
     public bool IsGrounded { get { return _grounded && !_jumped; } }
 
     // input
@@ -325,17 +325,16 @@ public class Locomotion : MonoBehaviour
         CinemachineCameraTarget.transform.rotation = Quaternion.Euler(_cinemachineTargetPitch, _cinemachineTargetYaw, 0.0f);
     }
 
-    private void OnDrawGizmosSelected()
+    public void resetAnimations()
     {
-        Color transparentGreen = new Color(0.0f, 1.0f, 0.0f, 0.35f);
-        Color transparentRed = new Color(1.0f, 0.0f, 0.0f, 0.35f);
-
-        if (_grounded) Gizmos.color = transparentGreen;
-        else Gizmos.color = transparentRed;
-
-        // when selected, draw a gizmo in the position of, and matching radius of, the grounded collider
-        Vector3 spherePosition = transform.position + Vector3.down * GroundedOffset;
-        Gizmos.DrawSphere(spherePosition, GroundedRadius);
+        if (_anim)
+        {
+            _anim.SetBool(_moveAnimHash, false);
+            _anim.SetBool(_runAnimHash, false);
+            _anim.ResetTrigger(_jumpAnimHash);
+            _anim.SetBool(_groundAnimHash, true);
+            _anim.SetBool(_fallAnimHash, false);
+        }
     }
 
     private void OnFootstepClip(AnimationEvent animationEvent)
@@ -358,5 +357,18 @@ public class Locomotion : MonoBehaviour
     private void OnLandClip(AnimationEvent animationEvent)
     {
         AudioSource.PlayClipAtPoint(LandingAudioClip, transform.position, AudioVolume);
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Color transparentGreen = new Color(0.0f, 1.0f, 0.0f, 0.35f);
+        Color transparentRed = new Color(1.0f, 0.0f, 0.0f, 0.35f);
+
+        if (_grounded) Gizmos.color = transparentGreen;
+        else Gizmos.color = transparentRed;
+
+        // when selected, draw a gizmo in the position of, and matching radius of, the grounded collider
+        Vector3 spherePosition = transform.position + Vector3.down * GroundedOffset;
+        Gizmos.DrawSphere(spherePosition, GroundedRadius);
     }
 }
