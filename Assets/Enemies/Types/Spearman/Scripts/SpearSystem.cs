@@ -1,4 +1,4 @@
-using System.Threading;
+using System.Collections;
 using UnityEngine;
 
 public class SpearSystem : MonoBehaviour
@@ -9,7 +9,7 @@ public class SpearSystem : MonoBehaviour
 
     private void Start()
     {
-        Destroy(this, 5.0f);
+        Destroy(gameObject, 5f);
     }
 
     void Update()
@@ -26,7 +26,7 @@ public class SpearSystem : MonoBehaviour
             stick = true;
             transform.parent = other.gameObject.transform;
             other.gameObject.GetComponent<Death>().TakeDamage(20f, SpearMan.transform.forward);
-            Destroy(this, 3.0f);
+            Destroy(gameObject, 1f);
         }
     }
 }
