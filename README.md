@@ -23,6 +23,8 @@ You can download the game from this [Google Drive Link](.).
 
 ## ScreenShots
 
+
+![POSTER](https://user-images.githubusercontent.com/68661639/207155239-23113d00-28ea-46a7-80e1-e8b0765d302d.JPG)
 ![2](https://user-images.githubusercontent.com/68661639/207155132-776051d1-4f0f-4be3-8305-b59df7ddda8c.JPG)
 ![3](https://user-images.githubusercontent.com/68661639/207155136-25d0d247-31e4-4bea-94a8-4221f5f7d7cc.JPG)
 ![4](https://user-images.githubusercontent.com/68661639/207155142-1c4b8aef-78bb-4656-973e-ab861dea322a.JPG)
@@ -38,7 +40,7 @@ You can download the game from this [Google Drive Link](.).
 ![14](https://user-images.githubusercontent.com/68661639/207155215-a2106188-9698-48db-9f1f-a8340c4b30c2.JPG)
 ![15](https://user-images.githubusercontent.com/68661639/207155230-5d87c22c-0495-45c5-b94c-efcb98813ac1.JPG)
 ![16](https://user-images.githubusercontent.com/68661639/207155235-640c5b39-feba-45d6-8147-58e1002b4555.JPG)
-![POSTER](https://user-images.githubusercontent.com/68661639/207155239-23113d00-28ea-46a7-80e1-e8b0765d302d.JPG)
+
 
 
 ## Development
