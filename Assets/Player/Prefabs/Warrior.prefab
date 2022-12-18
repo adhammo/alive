@@ -2500,7 +2500,7 @@ MonoBehaviour:
   RotationSpeed: 1
   VoiceSource: {fileID: 1373341278417480081}
   JumpingAudioClip: {fileID: 8300000, guid: 115f193881fada14d807d61249cc0c9e, type: 3}
-  LandingAudioClip: {fileID: 8300000, guid: ff697d3070687ce4583faa0561a145a2, type: 3}
+  LandingAudioClip: {fileID: 8300000, guid: b03dbfbfc13c7ab42ad097f05e42b52b, type: 3}
   FootstepAudioClips:
   - {fileID: 8300000, guid: 9162f676131d592439cd77c40748beb5, type: 3}
   - {fileID: 8300000, guid: 87a33800a2bf7cf41b025769a6974729, type: 3}

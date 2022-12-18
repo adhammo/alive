@@ -1,38 +1,31 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
 public class NPCRoaming : MonoBehaviour
 {
+    /* AI Variables */
+    public GameObject[] RandomPoints;
 
-    /*      AI Variables */
-    public Animator anim;
-    public Rigidbody rb;
-    public NavMeshAgent agent;
-    public int index;
-    public GameObject [] RandomPoints;
-    Vector3 direction = Vector3.zero;
+    /* FSM Variables */
+    private int index;
+    private Vector3 direction = Vector3.zero;
 
-
-    /*      FSM Variables*/
-    private Vector3 starting_position;
-
-
+    private NavMeshAgent agent;
 
     void Start()
-    {  
-            index = GetRoamingPosition();
+    {
+        agent = GetComponent<NavMeshAgent>();
+
+        index = GetRoamingPosition();
     }
 
     // Update is called once per frame
-     void Update()
-     {
-                    Roaming();         
-     }
+    void Update()
+    {
+        Roaming();
+    }
 
-
-     /*Function to Face the point at roaming state*/
+    /*Function to Face the point at roaming state*/
     void FaceTarget_point(Transform point)
     {
         Vector3 direction = point.position - transform.position;
@@ -41,30 +34,26 @@ public class NPCRoaming : MonoBehaviour
             Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
             transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 5f);
         }
-
     }
 
     public static Vector3 GetRandomDir()
     {
-        return new Vector3(UnityEngine.Random.Range(-1f,1f), 0, UnityEngine.Random.Range(-1f,1f) ).normalized;
+        return new Vector3(UnityEngine.Random.Range(-1f, 1f), 0, UnityEngine.Random.Range(-1f, 1f)).normalized;
     }
 
     private int GetRoamingPosition()
     {
-        return Random.Range(0,3);
+        return Random.Range(0, RandomPoints.Length);
     }
 
     private void Roaming()
     {
+        agent.SetDestination(RandomPoints[index].transform.position);
 
-             agent.SetDestination(RandomPoints[index].transform.position);
-
-            if( Vector3.Distance(transform.position,RandomPoints[index].transform.position) < 3f )
-            {
-                index = GetRoamingPosition();
-            }
-       
+        if (Vector3.Distance(transform.position, RandomPoints[index].transform.position) < 3f)
+        {
+            index = GetRoamingPosition();
+        }
     }
-
 }
 

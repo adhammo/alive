@@ -899,7 +899,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8136989376241466362}
-  - {fileID: 9190222823470256115}
+  - {fileID: 3430140410354858714}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -914,9 +914,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5
-  m_Height: 3
+  m_Height: 4
   m_Direction: 1
-  m_Center: {x: 0, y: 1, z: 0}
+  m_Center: {x: 0, y: 1.5, z: 0}
 --- !u!95 &3769742989016090761
 Animator:
   serializedVersion: 4
@@ -950,9 +950,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Interaction: 0
-  DisabledChildren:
-  - {fileID: 4275554156342548102}
-  - {fileID: 3517990560831439674}
 --- !u!1 &4197002730363609593
 GameObject:
   m_ObjectHideFlags: 0
@@ -1007,16 +1004,16 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4275554156342548102}
-  m_LocalRotation: {x: 0.014752731, y: 0.0000000036672896, z: -0.00000019996709, w: 0.9998912}
-  m_LocalPosition: {x: 0.00000006498344, y: 1.001165, z: -0.009497832}
+  m_LocalRotation: {x: 0.014752731, y: 0.000000029802319, z: -0.00000020023433, w: 0.9998912}
+  m_LocalPosition: {x: 0, y: 1.001165, z: -0.009500365}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1717201519668295311}
   - {fileID: 4976384306315425996}
   - {fileID: 8926911955053821024}
-  m_Father: {fileID: 3736413447570567015}
-  m_RootOrder: 1
+  m_Father: {fileID: 3430140410354858714}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4738606068434386975
 GameObject:
@@ -1372,6 +1369,38 @@ Transform:
   m_Children: []
   m_Father: {fileID: 7916286350009038882}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6735041532350037063
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3430140410354858714}
+  m_Layer: 6
+  m_Name: Stand
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3430140410354858714
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6735041532350037063}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.130698, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 9190222823470256115}
+  m_Father: {fileID: 3736413447570567015}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6897939007023091041
 GameObject:

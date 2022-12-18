@@ -64,16 +64,6 @@ public class Death : MonoBehaviour
         _currentHealth = MaxHealth;
     }
 
-    public void OnInteract()
-    {
-        TakeDamage(10f);
-    }
-
-    public void OnClick()
-    {
-        TakeDamage(10f, -transform.forward);
-    }
-
     public void TakeDamage(float damage)
     {
         Hurt();
@@ -104,7 +94,7 @@ public class Death : MonoBehaviour
     {
         if (CanHurt)
         {
-            var index = Random.Range(0, HurtAudioClips.Length);
+            var index = Random.Range(0, 2);
             _anim.SetFloat(_hurtValAnimHash, index);
             _anim.SetTrigger(_hurtAnimHash);
             // HurtUI.GetHurt();

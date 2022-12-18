@@ -303,9 +303,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5
-  m_Height: 2.4
+  m_Height: 4
   m_Direction: 1
-  m_Center: {x: 0, y: 0.7, z: 0}
+  m_Center: {x: 0, y: 1.5, z: 0}
 --- !u!95 &2041363327922039030
 Animator:
   serializedVersion: 4
@@ -339,9 +339,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Interaction: 9
-  DisabledChildren:
-  - {fileID: 1491556344314895772}
-  - {fileID: 2659591718492030467}
 --- !u!1 &1313379662662287774
 GameObject:
   m_ObjectHideFlags: 0

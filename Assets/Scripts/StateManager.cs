@@ -20,20 +20,31 @@ public class StateManager : MonoBehaviour
 
     private void Start()
     {
-
         // disable all cutscenes
         WakeupCutscene.SetActive(false);
         DeathCutscene.SetActive(false);
         RebirthCutscene.SetActive(false);
         BoomCutscene.SetActive(false);
-
-        Wakeup();
     }
 
+    public bool wakeup;
+    public bool death;
     public bool rebirth;
     public bool boom;
     private void Update()
     {
+        if (wakeup)
+        {
+            Wakeup();
+            wakeup = false;
+        }
+
+        if (death)
+        {
+            Death();
+            death = false;
+        }
+
         if (rebirth)
         {
             Rebirth();

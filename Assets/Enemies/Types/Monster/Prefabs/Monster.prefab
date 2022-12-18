@@ -655,6 +655,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: e34b2201ca068134bb96bb1d93eb4177, type: 3}
   - {fileID: 8300000, guid: 175b5656476c2de4f85d8dade61b8015, type: 3}
   - {fileID: 8300000, guid: 5f5199334b3aef64b9e2e73d3e1c800d, type: 3}
+  CanAttack: 1
 --- !u!1 &3028708219735412798
 GameObject:
   m_ObjectHideFlags: 0

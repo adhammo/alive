@@ -106,18 +106,18 @@ ModelImporter:
     serializedVersion: 3
     human: []
     skeleton:
-    - name: Vampire A Lusth (1)(Clone)
+    - name: Vampire A Lusth(Clone)
       parentName: 
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Vampire
-      parentName: Vampire A Lusth (1)(Clone)
+      parentName: Vampire A Lusth(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamorig:Hips
-      parentName: Vampire A Lusth (1)(Clone)
+      parentName: Vampire A Lusth(Clone)
       position: {x: 0.0007195861, y: 1.2174375, z: 0.01014779}
       rotation: {x: 2.8584516e-13, y: -0.000000004671005, z: -0.0000007276232, w: 1}
       scale: {x: 1, y: 1, z: 1}
